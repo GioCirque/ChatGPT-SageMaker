@@ -1,0 +1,19 @@
+{
+  "cSpell.words": [
+    "boto",
+    "filebase",
+    "fileset",
+    "funcs",
+    "huggingface",
+    "sagemakeriface",
+    "sagemakerruntime",
+    "substr",
+    "tiiuae",
+    "toset",
+    "xlarge"
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none"
+}

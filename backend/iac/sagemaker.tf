@@ -12,8 +12,8 @@ resource "aws_sagemaker_endpoint_configuration" "main" {
   name = "${local.base_name}-endpoint-config"
 
   production_variants {
-    variant_name           = local.model.variant.variant_name
     model_name             = aws_sagemaker_model.main.name
+    variant_name           = local.model.variant.variant_name
     initial_instance_count = local.model.variant.instance_count
     instance_type          = local.model.variant.instance_type
   }

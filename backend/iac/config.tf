@@ -15,13 +15,14 @@ locals {
 
   sagemaker = {
     policies = toset([
-      "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess",
       "arn:aws:iam::aws:policy/AmazonS3FullAccess",
+      "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess",
     ])
   }
 
   lambda = {
     policies = toset([
+      "arn:aws:iam::aws:policy/AmazonS3FullAccess",
       "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
     ])
     root = "${path.module}../lambdas"
